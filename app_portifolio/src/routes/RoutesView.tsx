@@ -1,11 +1,11 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
-import { Main } from '../screens/Main';
+import { Inicio } from '../screens/Inicio';
 import { Skills } from '../screens/Skills';
 import { RootStackParamsList } from '../types/RootStackParamsList';
 
-const { Navigator, Screen } = createStackNavigator<RootStackParamsList>();
+const { Navigator, Screen } = createBottomTabNavigator<RootStackParamsList>();
 
 const RoutesView = () => {
   return (
@@ -13,9 +13,8 @@ const RoutesView = () => {
       <Navigator
         screenOptions={{
           headerShown: false,
-        }}
-        initialRouteName="Main">
-        <Screen name="Main" component={Main} />
+        }}>
+        <Screen name="Inicio" component={Inicio} />
         <Screen name="Skills" component={Skills} />
       </Navigator>
     </NavigationContainer>

@@ -1,4 +1,4 @@
 export type RootStackParamsList = {
-  Main: undefined;
+  Inicio: undefined;
   Skills: undefined;
 };
