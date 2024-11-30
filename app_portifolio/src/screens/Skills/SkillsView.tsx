@@ -15,7 +15,10 @@ const SkillsView = () => {
       <View style={styles.containerSkills}>
         <Text style={styles.titleSkills}>Skills:</Text>
         <View style={styles.containerList}>
+          <RowSkills label="Javascript" value={4} />
           <RowSkills label="React Native" value={5} />
+          <RowSkills label="HTML" value={4} />
+          <RowSkills label="CSS" value={4} />
         </View>
       </View>
     </View>
